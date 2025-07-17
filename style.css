@@ -1,0 +1,271 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Cairo', sans-serif;
+}
+.shadow{
+    box-shadow: 0px 4px 4px 0px gray;
+}
+body {
+    margin: 0;
+    background-color: #fff;
+    color: #111;
+    direction: rtl;
+}
+
+.header {
+    text-align: center;
+    padding: 20px;
+}
+
+.header img {
+    height: 96px;
+}
+
+.product-section {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 30px;
+    padding: 20px;
+    flex-wrap: wrap;
+   
+    
+}
+
+.product-info {
+    max-width: 400px;
+}
+
+.product-info h1 {
+    font-size: 2rem;
+}
+
+.price {
+    font-size: 1.2rem;
+}
+
+.old-price {
+    text-decoration: line-through;
+    color: #aaa;
+}
+
+.new-price {
+    color: #008000;
+    font-weight: bold;
+}
+li{
+    list-style: none;
+}
+.options label {
+    display: inline-block;
+    margin: 5px 10px 5px 0;
+}
+
+input[type="checkbox"] {
+    accent-color: #009c56;
+}
+
+.quantity {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 15px 0;
+    font-weight: bold;
+}
+
+.quantity button {
+    padding: 5px 10px;
+}
+.quantitybtn{
+    background-color:white;
+}
+.quantitybtn:hover{
+    cursor: pointer;
+    background-color:antiquewhite;
+}
+
+.order-btn {
+    background-color: #009c56;
+    color: white;
+    padding: 10px 40px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+}
+.order-btn:hover{
+    background-color: #015f35;
+    box-shadow: none;
+}
+#orderbtn1{
+    width: 280px;
+    height: 40px;
+}
+.product-image {
+    width: 470px;
+}
+.img_principale{
+  height: 470px;
+}
+.product-image img {
+    width: 100%;
+    display: block;
+}
+
+.thumbnails {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.thumbnails img {
+    width: 110px;
+    height: 110px;
+    cursor: pointer;
+}
+
+.secback{
+   height: 500px;
+   width: 100%;
+   background-image: url("assets/_DSC2389.JPG");
+}
+
+.gallery-section {
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.gallery {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.gallery-images {
+    display: flex;
+    gap: 10px;
+    overflow-x: auto;
+}
+
+.gallery-images img {
+    width: 300px;
+    height: 300px;
+    flex-shrink: 0;
+}
+
+.arrow {
+    background: none;
+    border: none;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+.order-summary {
+    padding: 20px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.order-summary div{
+    width:500px;
+}
+
+.order-summary table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+.order-summary th,
+.order-summary td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+}
+
+.order-summary .total td {
+    font-weight: bold;
+    color: #008000;
+}
+
+.order-form {
+    display: grid;
+    gap: 10px;
+}
+
+.order-form input {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.order-form button {
+    background-color: #009c56;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 6px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.spcbtwen{
+    display: flex;
+    justify-content: space-between;
+}
+
+.spcbtwen input{
+    width: 240px;
+}
+
+.footer {
+    text-align: center;
+    padding: 20px;
+    font-size: 0.8rem;
+    color: #555;
+    background-color:black;
+}
+
+a{
+    text-decoration: none;
+    color:#555;
+    font-weight: bold;
+}
+/* Responsive */
+@media (max-width: 375px) {
+    .product-section {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .product-info,
+    .product-image {
+        width: 90%;
+    }
+
+    .gallery-images img {
+        width: 100px;
+    }
+
+    #orderbtn1{
+    width: 400px;
+    height: 40px;
+    }
+
+    .order-summary {
+    padding: 20px;
+    display: block;
+    }
+
+    .order-summary div{
+    width:300px;
+    }
+    
+    .secback{
+   height: 300px;
+   width: 100%;
+   background-image: url("assets/_DSC2389.JPG");
+   }
+}
